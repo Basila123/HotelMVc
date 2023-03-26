@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Hotel_DBModelStoreContainer" CdmEntityContainer="Hotel_DBEntities2">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="Hotel_DBModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="CustomerId" ColumnName="CustomerId" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="Hotel_DBModel.Item">
+        <MappingFragment StoreEntitySet="Item">
+          <ScalarProperty Name="itemId" ColumnName="itemId" />
+          <ScalarProperty Name="itemName" ColumnName="itemName" />
+          <ScalarProperty Name="itemPrice" ColumnName="itemPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PayementTypes">
+      <EntityTypeMapping TypeName="Hotel_DBModel.PayementType">
+        <MappingFragment StoreEntitySet="PayementType">
+          <ScalarProperty Name="PayementTypeId" ColumnName="PayementTypeId" />
+          <ScalarProperty Name="PayementTypeName" ColumnName="PayementTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
